@@ -11,12 +11,16 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/mi_primer_ruta',function(){
+Route::get('prueba','PruebaController@prueba');
+
+/*Route::get('/mi_primer_ruta',function(){
     return "Hello World";
 });
 Route::get('/name/{name}/lastname/{lastname?}',function($name,$lastname = null ){
     return "Hola mi nombre es : ". $name . " " .$lastname;
-});
+});*/
+
