@@ -16,6 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('prueba','PruebaController@prueba');
+Route::resource('trainers','TrainerController');
 
 /*Route::get('/mi_primer_ruta',function(){
     return "Hello World";
